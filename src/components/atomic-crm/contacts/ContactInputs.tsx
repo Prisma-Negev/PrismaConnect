@@ -20,6 +20,7 @@ import {
 import type { Sale } from "../types";
 import { Avatar } from "./Avatar";
 import { AutocompleteCompanyInput } from "../companies/AutocompleteCompanyInput.tsx";
+import { useConfigurationContext } from "../root/ConfigurationContext";
 
 export const ContactInputs = () => {
   const isMobile = useIsMobile();
@@ -33,6 +34,7 @@ export const ContactInputs = () => {
         <div className="flex flex-col gap-10 flex-1">
           <ContactIdentityInputs />
           <ContactPositionInputs />
+          <ContactResearcherInputs />
         </div>
         {isMobile ? null : (
           <Separator orientation="vertical" className="flex-shrink-0" />
@@ -192,6 +194,58 @@ const ContactPersonalInformationInputs = () => {
         helperText={false}
         validate={isLinkedinUrl}
       />
+    </div>
+  );
+};
+
+const academicTitleChoices = [
+  { id: "prof", name: "פרופ׳ מן המניין" },
+  { id: "assoc_prof", name: "פרופ׳ חבר" },
+  { id: "senior_lecturer", name: "מרצה בכיר" },
+  { id: "dr", name: 'ד"ר' },
+  { id: "postdoc", name: "פוסט-דוק" },
+  { id: "student", name: "סטודנט" },
+];
+
+const priorityChoices = [
+  { id: 1, name: "1 - דחוף" },
+  { id: 2, name: "2 - גבוה" },
+  { id: 3, name: "3 - בינוני" },
+  { id: 4, name: "4 - נמוך" },
+];
+
+const ContactResearcherInputs = () => {
+  const translate = useTranslate();
+  const { companySectors } = useConfigurationContext();
+  const sectorChoices = companySectors.map((s) => ({
+    id: s.value,
+    name: s.label,
+  }));
+
+  return (
+    <div className="flex flex-col gap-4">
+      <h6 className="text-lg font-semibold">
+        {translate("resources.contacts.field_categories.researcher_info")}
+      </h6>
+      <SelectInput
+        source="academic_title"
+        choices={academicTitleChoices}
+        helperText={false}
+      />
+      <SelectInput
+        source="department"
+        choices={sectorChoices}
+        helperText={false}
+      />
+      <TextInput source="research_focus" helperText={false} />
+      <TextInput source="cris_profile" helperText={false} />
+      <SelectInput
+        source="priority"
+        choices={priorityChoices}
+        defaultValue={3}
+        helperText={false}
+      />
+      <SelectInput source="sector" choices={sectorChoices} helperText={false} />
     </div>
   );
 };

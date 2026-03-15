@@ -3,60 +3,62 @@ import type { ConfigurationContextValue } from "./ConfigurationContext";
 export const defaultDarkModeLogo = "./logos/logo_atomic_crm_dark.svg";
 export const defaultLightModeLogo = "./logos/logo_atomic_crm_light.svg";
 
-export const defaultCurrency = "USD";
+export const defaultCurrency = "ILS";
 
-export const defaultTitle = "Atomic CRM";
+export const defaultTitle = "Prisma Negev CRM";
 
 export const defaultCompanySectors = [
-  { value: "communication-services", label: "Communication Services" },
-  { value: "consumer-discretionary", label: "Consumer Discretionary" },
-  { value: "consumer-staples", label: "Consumer Staples" },
-  { value: "energy", label: "Energy" },
-  { value: "financials", label: "Financials" },
-  { value: "health-care", label: "Health Care" },
-  { value: "industrials", label: "Industrials" },
-  { value: "information-technology", label: "Information Technology" },
-  { value: "materials", label: "Materials" },
-  { value: "real-estate", label: "Real Estate" },
-  { value: "utilities", label: "Utilities" },
+  { value: "industrial-engineering", label: "הנדסת תעשייה וניהול" },
+  { value: "mechanical-engineering", label: "הנדסת מכונות" },
+  { value: "electrical-engineering", label: "הנדסת חשמל" },
+  { value: "computer-science", label: "מדעי המחשב" },
+  { value: "biomedical-engineering", label: "הנדסה ביו-רפואית" },
+  { value: "chemistry", label: "כימיה" },
+  { value: "materials-engineering", label: "הנדסת חומרים" },
+  { value: "civil-engineering", label: "הנדסה אזרחית" },
+  { value: "education", label: "חינוך" },
+  { value: "psychology", label: "פסיכולוגיה" },
+  { value: "other", label: "אחר" },
 ];
 
 export const defaultDealStages = [
-  { value: "opportunity", label: "Opportunity" },
-  { value: "proposal-sent", label: "Proposal Sent" },
-  { value: "in-negociation", label: "In Negotiation" },
-  { value: "won", label: "Won" },
-  { value: "lost", label: "Lost" },
-  { value: "delayed", label: "Delayed" },
+  { value: "not-contacted", label: "טרם פנייה" },
+  { value: "email-sent", label: "נשלח מייל" },
+  { value: "interested", label: "מעוניין" },
+  { value: "confirmed", label: "אישר השתתפות" },
+  { value: "attended", label: "השתתף" },
+  { value: "declined", label: "סירב" },
+  { value: "no-response", label: "לא ענה" },
 ];
 
-export const defaultDealPipelineStatuses = ["won"];
+export const defaultDealPipelineStatuses = ["confirmed", "attended"];
 
 export const defaultDealCategories = [
-  { value: "other", label: "Other" },
-  { value: "copywriting", label: "Copywriting" },
-  { value: "print-project", label: "Print project" },
-  { value: "ui-design", label: "UI Design" },
-  { value: "website-design", label: "Website design" },
+  { value: "industry-conference", label: "כנס תעשייה" },
+  { value: "education-forum", label: "פורום חינוך" },
+  { value: "workshop", label: "סדנה" },
+  { value: "meetup", label: "מפגש" },
+  { value: "webinar", label: "וובינר" },
+  { value: "other", label: "אחר" },
 ];
 
 export const defaultNoteStatuses = [
-  { value: "cold", label: "Cold", color: "#7dbde8" },
-  { value: "warm", label: "Warm", color: "#e8cb7d" },
-  { value: "hot", label: "Hot", color: "#e88b7d" },
-  { value: "in-contract", label: "In Contract", color: "#a4e87d" },
+  { value: "initial", label: "פנייה ראשונית", color: "#7dbde8" },
+  { value: "in-progress", label: "בתהליך", color: "#e8cb7d" },
+  { value: "positive", label: "תגובה חיובית", color: "#a4e87d" },
+  { value: "negative", label: "תגובה שלילית", color: "#e88b7d" },
 ];
 
 export const defaultTaskTypes = [
-  { value: "none", label: "None" },
-  { value: "email", label: "Email" },
-  { value: "demo", label: "Demo" },
-  { value: "lunch", label: "Lunch" },
-  { value: "meeting", label: "Meeting" },
-  { value: "follow-up", label: "Follow-up" },
-  { value: "thank-you", label: "Thank you" },
-  { value: "ship", label: "Ship" },
-  { value: "call", label: "Call" },
+  { value: "none", label: "ללא" },
+  { value: "cold-email", label: "מייל ראשוני" },
+  { value: "follow-up", label: "מעקב" },
+  { value: "phone-call", label: "שיחת טלפון" },
+  { value: "meeting", label: "פגישה" },
+  { value: "cris-check", label: "בדיקת CRIS" },
+  { value: "secretary-contact", label: "פנייה למזכירות" },
+  { value: "confirmation", label: "אישור השתתפות" },
+  { value: "thank-you", label: "מייל תודה" },
 ];
 
 export const defaultConfiguration: ConfigurationContextValue = {

@@ -67,6 +67,7 @@ export const englishCrmMessages = {
         misc: "Misc",
         personal_info: "Personal info",
         position: "Position",
+        researcher_info: "Researcher info",
       },
       fields: {
         first_name: "First name",
@@ -82,6 +83,12 @@ export const englishCrmMessages = {
         background: "Background info (bio, how you met, etc)",
         has_newsletter: "Has newsletter",
         sales_id: "Account manager",
+        cris_profile: "CRIS Profile",
+        department: "Department",
+        research_focus: "Research focus",
+        priority: "Priority",
+        academic_title: "Academic title",
+        sector: "Sector",
       },
       action: {
         add: "Add contact",

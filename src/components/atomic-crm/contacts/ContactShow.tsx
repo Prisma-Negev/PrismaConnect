@@ -24,6 +24,7 @@ import { NoteCreateSheet } from "../notes/NoteCreateSheet";
 import { ContactEditSheet } from "./ContactEditSheet";
 import { TagsListEdit } from "./TagsListEdit";
 import { ContactPersonalInfo } from "./ContactPersonalInfo";
+import { ContactResearcherInfo } from "./ContactResearcherInfo";
 import { ContactBackgroundInfo } from "./ContactBackgroundInfo";
 import { ContactTasksList } from "./ContactTasksList";
 import type { Contact } from "../types";
@@ -192,6 +193,17 @@ const ContactShowContentMobile = () => {
                 <Separator />
                 <div className="mt-3">
                   <ContactPersonalInfo />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold">
+                  {translate(
+                    "resources.contacts.field_categories.researcher_info",
+                  )}
+                </h3>
+                <Separator />
+                <div className="mt-3">
+                  <ContactResearcherInfo />
                 </div>
               </div>
               <div>
