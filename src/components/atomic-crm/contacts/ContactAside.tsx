@@ -14,6 +14,7 @@ import { AsideSection } from "../misc/AsideSection";
 import type { Contact } from "../types";
 import { ContactMergeButton } from "./ContactMergeButton";
 import { ExportVCardButton } from "./ExportVCardButton";
+import { ContactAIPanel } from "./ContactAIPanel";
 
 export const ContactAside = ({ link = "edit" }: { link?: "edit" | "show" }) => {
   const record = useRecordContext<Contact>();
@@ -53,6 +54,11 @@ export const ContactAside = ({ link = "edit" }: { link?: "edit" | "show" }) => {
       >
         <TagsListEdit />
       </AsideSection>
+
+      {/* AI Analysis Panel */}
+      <div className="mt-4">
+        <ContactAIPanel />
+      </div>
 
       <AsideSection
         title={translate("resources.tasks.name", { smart_count: 2 })}
