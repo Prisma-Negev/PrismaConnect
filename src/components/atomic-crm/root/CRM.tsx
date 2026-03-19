@@ -54,6 +54,7 @@ import { i18nProvider } from "../providers/commons/i18nProvider";
 import { StartPage } from "../login/StartPage.tsx";
 import { useIsMobile } from "@/hooks/use-mobile.ts";
 import { MobileTasksList } from "../tasks/MobileTasksList.tsx";
+import { TasksListDesktop } from "../tasks/TasksListDesktop.tsx";
 import { ContactListMobile } from "../contacts/ContactList.tsx";
 import { ContactShow } from "../contacts/ContactShow.tsx";
 import { CompanyShow } from "../companies/CompanyShow.tsx";
@@ -252,7 +253,7 @@ const DesktopAdmin = (props: CoreAdminProps) => {
       <Resource name="companies" {...companies} />
       <Resource name="contact_notes" />
       <Resource name="deal_notes" />
-      <Resource name="tasks" />
+      <Resource name="tasks" list={TasksListDesktop} />
       <Resource name="sales" {...sales} />
       <Resource name="tags" />
     </Admin>

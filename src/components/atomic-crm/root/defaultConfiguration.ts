@@ -34,11 +34,11 @@ export const defaultDealStages = [
 export const defaultDealPipelineStatuses = ["confirmed", "attended"];
 
 export const defaultDealCategories = [
-  { value: "industry-conference", label: "כנס תעשייה" },
-  { value: "education-forum", label: "פורום חינוך" },
-  { value: "workshop", label: "סדנה" },
-  { value: "meetup", label: "מפגש" },
-  { value: "webinar", label: "וובינר" },
+  { value: "event", label: "אירוע" },
+  { value: "hackathon", label: "האקאתון" },
+  { value: "project", label: "פרויקט" },
+  { value: "forum", label: "פורום" },
+  { value: "connection", label: "חיבור עסקי/מחקרי" },
   { value: "other", label: "אחר" },
 ];
 

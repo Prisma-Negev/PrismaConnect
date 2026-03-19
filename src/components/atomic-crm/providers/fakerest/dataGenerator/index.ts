@@ -19,6 +19,15 @@ export default (): Db => {
   db.deals = generateDeals(db);
   db.deal_notes = generateDealNotes(db);
   db.tasks = generateTasks(db);
+  db.tasks_summary = db.tasks.map((t) => {
+    const deal = db.deals.find((d) => d.id === t.deal_id);
+    return {
+      ...t,
+      deal_name: deal?.name,
+      deal_project_type: deal?.project_type,
+      deal_stage: deal?.stage,
+    };
+  });
   db.configuration = [
     {
       id: 1,

@@ -19,5 +19,6 @@ export interface Db {
   sales: Sale[];
   tags: Tag[];
   tasks: Task[];
+  tasks_summary: import("../../../types").TaskSummary[];
   configuration: Array<{ id: number; config: ConfigurationContextValue }>;
 }

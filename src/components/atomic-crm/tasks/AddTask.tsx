@@ -117,8 +117,8 @@ export const AddTask = ({
                 <DialogTitle>
                   {!selectContact
                     ? translate("resources.tasks.dialog.create_for", {
-                        name: getContactRepresentation(contact!),
-                      })
+                      name: getContactRepresentation(contact!),
+                    })
                     : translate("resources.tasks.dialog.create")}
                 </DialogTitle>
               </DialogHeader>

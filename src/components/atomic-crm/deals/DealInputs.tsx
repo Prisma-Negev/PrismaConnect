@@ -33,6 +33,7 @@ const DealInfoInputs = () => {
     <div className="flex flex-col gap-4 flex-1">
       <TextInput source="name" validate={required()} helperText={false} />
       <TextInput source="description" multiline rows={3} helperText={false} />
+      <TextInput source="ai_context" multiline rows={4} helperText={false} />
     </div>
   );
 };

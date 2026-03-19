@@ -122,6 +122,8 @@ export type Deal = {
   company_id: Identifier;
   contact_ids: Identifier[];
   category: string;
+  project_type?: string;
+  ai_context?: string;
   stage: string;
   description: string;
   amount: number;
@@ -152,12 +154,21 @@ export type Tag = {
 
 export type Task = {
   contact_id: Identifier;
+  deal_id?: Identifier | null;
   type: string;
   text: string;
+  note?: string | null;
+  completed?: boolean;
   due_date: string;
   done_date?: string | null;
   sales_id?: Identifier;
 } & Pick<RaRecord, "id">;
+
+export type TaskSummary = Task & {
+  deal_name?: string;
+  deal_project_type?: string;
+  deal_stage?: string;
+};
 
 export type ActivityCompanyCreated = {
   type: typeof COMPANY_CREATED;

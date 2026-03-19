@@ -3,15 +3,15 @@ import type { CrmMessages } from "./englishCrmMessages";
 export const hebrewCrmMessages = {
   resources: {
     companies: {
-      name: "מחלקה |||| מחלקות",
-      forcedCaseName: "מחלקה",
+      name: "מחלקה / ארגון |||| מחלקות / ארגונים",
+      forcedCaseName: "מחלקה / ארגון",
       fields: {
         name: "שם המחלקה",
         website: "אתר אינטרנט",
         linkedin_url: "כתובת LinkedIn",
         phone_number: "מספר טלפון",
         created_at: "תאריך יצירה",
-        nb_contacts: "מספר חוקרים",
+        nb_contacts: "מספר אנשי קשר",
         revenue: "תקציב",
         sector: "תחום",
         size: "גודל",
@@ -44,9 +44,9 @@ export const hebrewCrmMessages = {
       added_on: "נוסף בתאריך %{date}",
       followed_by: "באחריות %{name}",
       followed_by_you: "באחריותך",
-      no_contacts: "אין חוקרים",
-      nb_contacts: "חוקר %{smart_count} |||| %{smart_count} חוקרים",
-      nb_deals: "אירוע %{smart_count} |||| %{smart_count} אירועים",
+      no_contacts: "אין אנשי קשר",
+      nb_contacts: "איש קשר %{smart_count} |||| %{smart_count} אנשי קשר",
+      nb_deals: "פרויקט / אירוע %{smart_count} |||| %{smart_count} פרויקטים / פרויקט / אירועים",
       sizes: {
         one_employee: "עובד אחד",
         two_to_nine_employees: "2-9 עובדים",
@@ -61,15 +61,15 @@ export const hebrewCrmMessages = {
       },
     },
     contacts: {
-      name: "חוקר |||| חוקרים",
-      forcedCaseName: "חוקר",
+      name: "איש קשר |||| אנשי קשר",
+      forcedCaseName: "איש קשר",
       field_categories: {
         background_info: "מידע רקע",
         identity: "זהות",
         misc: "שונות",
         personal_info: "פרטים אישיים",
         position: "תפקיד",
-        researcher_info: "פרטי חוקר",
+        researcher_info: "פרטי איש קשר",
       },
       fields: {
         first_name: "שם פרטי",
@@ -93,13 +93,13 @@ export const hebrewCrmMessages = {
         sector: "תחום",
       },
       action: {
-        add: "הוספת חוקר",
-        add_first: "הוסף את החוקר הראשון",
-        create: "יצירת חוקר",
-        edit: "עריכת חוקר",
+        add: "הוספת איש קשר",
+        add_first: "הוסף את האיש קשר הראשון",
+        create: "יצירת איש קשר",
+        edit: "עריכת איש קשר",
         export_vcard: "ייצוא ל-vCard",
-        new: "חוקר חדש",
-        show: "הצגת חוקר",
+        new: "איש קשר חדש",
+        show: "הצגת איש קשר",
       },
       background: {
         last_activity_on: "פעילות אחרונה ב-%{date}",
@@ -110,16 +110,16 @@ export const hebrewCrmMessages = {
       position_at: "%{title} ב-",
       position_at_company: "%{title} ב-%{company}",
       empty: {
-        description: "נראה שרשימת החוקרים ריקה.",
-        title: "לא נמצאו חוקרים",
+        description: "נראה שרשימת האנשי קשר ריקה.",
+        title: "לא נמצאו אנשי קשר",
       },
       import: {
-        title: "ייבוא חוקרים",
+        title: "ייבוא אנשי קשר",
         button: "ייבוא CSV",
         complete:
-          "ייבוא החוקרים הושלם. יובאו %{importCount} חוקרים, עם %{errorCount} שגיאות",
+          "ייבוא האנשי קשר הושלם. יובאו %{importCount} אנשי קשר, עם %{errorCount} שגיאות",
         progress:
-          "יובאו %{importCount} / %{rowCount} חוקרים, עם %{errorCount} שגיאות.",
+          "יובאו %{importCount} / %{rowCount} אנשי קשר, עם %{errorCount} שגיאות.",
         error: "ייבוא הקובץ נכשל, אנא ודא שסיפקת קובץ CSV תקין.",
         imported: "יובא",
         remaining_time: "זמן משוער שנותר:",
@@ -128,7 +128,7 @@ export const hebrewCrmMessages = {
         sample_hint: "הנה קובץ CSV לדוגמה שניתן להשתמש בו כתבנית",
         stop: "עצירת ייבוא",
         csv_file: "קובץ CSV",
-        contacts_label: "חוקר |||| חוקרים",
+        contacts_label: "איש קשר |||| אנשי קשר",
       },
       inputs: {
         genders: {
@@ -143,22 +143,22 @@ export const hebrewCrmMessages = {
         },
       },
       list: {
-        error_loading: "שגיאה בטעינת חוקרים",
+        error_loading: "שגיאה בטעינת אנשי קשר",
       },
       merge: {
-        action: "מיזוג עם חוקר אחר",
-        confirm: "מיזוג חוקרים",
-        current_contact: "החוקר הנוכחי (יימחק)",
-        description: "מיזוג חוקר זה עם חוקר אחר.",
-        error: "מיזוג החוקרים נכשל",
+        action: "מיזוג עם איש קשר אחר",
+        confirm: "מיזוג אנשי קשר",
+        current_contact: "האיש קשר הנוכחי (יימחק)",
+        description: "מיזוג איש קשר זה עם איש קשר אחר.",
+        error: "מיזוג האנשי קשר נכשל",
         merging: "ממזג...",
         no_additional_data: "אין נתונים נוספים למיזוג",
-        select_target: "אנא בחר חוקר למיזוג",
-        success: "החוקרים מוזגו בהצלחה",
-        target_contact: "חוקר יעד (יישמר)",
-        title: "מיזוג חוקר",
+        select_target: "אנא בחר איש קשר למיזוג",
+        success: "האנשי קשר מוזגו בהצלחה",
+        target_contact: "איש קשר יעד (יישמר)",
+        title: "מיזוג איש קשר",
         warning_description:
-          "כל הנתונים יועברו לחוקר השני. לא ניתן לבטל פעולה זו.",
+          "כל הנתונים יועברו לאיש קשר השני. לא ניתן לבטל פעולה זו.",
         warning_title: "אזהרה: פעולה הרסנית",
         what_will_be_merged: "מה ימוזג:",
       },
@@ -175,52 +175,52 @@ export const hebrewCrmMessages = {
       },
       hot: {
         empty_change_status:
-          'שנה את סטטוס החוקר על ידי הוספת הערה ולחיצה על "הצג אפשרויות".',
-        empty_hint: 'חוקרים עם סטטוס "חם" יופיעו כאן.',
-        title: "חוקרים חמים",
+          'שנה את סטטוס האיש קשר על ידי הוספת הערה ולחיצה על "הצג אפשרויות".',
+        empty_hint: 'אנשי קשר עם סטטוס "חם" יופיעו כאן.',
+        title: "אנשי קשר חמים",
       },
     },
     deals: {
-      name: "אירוע |||| אירועים",
+      name: "פרויקט / אירוע |||| פרויקטים / פרויקט / אירועים",
       fields: {
         name: "שם",
         description: "תיאור",
         company_id: "מחלקה",
-        contact_ids: "חוקרים",
+        contact_ids: "אנשי קשר",
         category: "קטגוריה",
         amount: "תקציב",
         expected_closing_date: "תאריך סגירה צפוי",
         stage: "שלב",
       },
       action: {
-        back_to_deal: "חזרה לאירוע",
-        create: "יצירת אירוע",
-        new: "אירוע חדש",
+        back_to_deal: "חזרה לפרויקט / אירוע",
+        create: "יצירת פרויקט / אירוע",
+        new: "פרויקט / אירוע חדש",
       },
       field_categories: {
         misc: "שונות",
       },
       archived: {
         action: "ארכיון",
-        error: "שגיאה: האירוע לא הועבר לארכיון",
-        list_title: "אירועים בארכיון",
-        success: "האירוע הועבר לארכיון",
-        title: "אירוע בארכיון",
-        view: "צפייה באירועים בארכיון",
+        error: "שגיאה: הפרויקט / אירוע לא הועבר לארכיון",
+        list_title: "פרויקטים בארכיון",
+        success: "הפרויקט / אירוע הועבר לארכיון",
+        title: "פרויקט בארכיון",
+        view: "צפייה בפרויקטים בארכיון",
       },
       inputs: {
         linked_to: "מקושר ל",
       },
       unarchived: {
         action: "החזרה ללוח",
-        error: "שגיאה: האירוע לא הוחזר מהארכיון",
-        success: "האירוע הוחזר מהארכיון",
+        error: "שגיאה: הפרויקט / אירוע לא הוחזר מהארכיון",
+        success: "הפרויקט / אירוע הוחזר מהארכיון",
       },
-      updated: "האירוע עודכן",
+      updated: "הפרויקט / אירוע עודכן",
       empty: {
-        before_create: "לפני יצירת אירוע.",
-        description: "נראה שרשימת האירועים ריקה.",
-        title: "לא נמצאו אירועים",
+        before_create: "לפני יצירת פרויקט / אירוע.",
+        description: "נראה שרשימת הפרויקטים / פרויקט / אירועים ריקה.",
+        title: "לא נמצאו פרויקטים / פרויקט / אירועים",
       },
       invalid_date: "תאריך לא תקין",
     },
@@ -231,8 +231,8 @@ export const hebrewCrmMessages = {
         status: "סטטוס",
         date: "תאריך",
         attachments: "קבצים מצורפים",
-        contact_id: "חוקר",
-        deal_id: "אירוע",
+        contact_id: "איש קשר",
+        deal_id: "פרויקט / אירוע",
       },
       action: {
         add: "הוספת הערה",
@@ -258,7 +258,7 @@ export const hebrewCrmMessages = {
       },
       note_for_contact: "הערה עבור %{name}",
       stepper: {
-        hint: "עבור לדף חוקר והוסף הערה",
+        hint: "עבור לדף איש קשר והוסף הערה",
       },
       added: "ההערה נוספה",
       inputs: {
@@ -298,7 +298,7 @@ export const hebrewCrmMessages = {
         text: "תיאור",
         due_date: "תאריך יעד",
         type: "סוג",
-        contact_id: "חוקר",
+        contact_id: "איש קשר",
         due_short: "יעד",
       },
       action: {
@@ -322,7 +322,7 @@ export const hebrewCrmMessages = {
         edit_for: "עריכת משימה עבור %{name}",
       },
       empty: "אין משימות עדיין",
-      empty_list_hint: "משימות שנוספו לחוקרים שלך יופיעו כאן.",
+      empty_list_hint: "משימות שנוספו לאנשי קשר שלך יופיעו כאן.",
       filters: {
         later: "מאוחר יותר",
         overdue: "באיחור",
@@ -388,17 +388,17 @@ export const hebrewCrmMessages = {
       you_added_contact: "הוספת",
       added_note: "%{name} הוסיף הערה על",
       you_added_note: "הוספת הערה על",
-      added_note_about_deal: "%{name} הוסיף הערה על אירוע",
-      you_added_note_about_deal: "הוספת הערה על אירוע",
-      added_deal: "%{name} הוסיף אירוע",
-      you_added_deal: "הוספת אירוע",
+      added_note_about_deal: "%{name} הוסיף הערה על פרויקט / אירוע",
+      you_added_note_about_deal: "הוספת הערה על פרויקט / אירוע",
+      added_deal: "%{name} הוסיף פרויקט / אירוע",
+      you_added_deal: "הוספת פרויקט / אירוע",
       at_company: "ב",
       to: "ל",
       load_more: "טען עוד פעילות",
     },
     dashboard: {
-      deals_chart: "תקציב אירועים קרובים",
-      deals_pipeline: "צנרת אירועים",
+      deals_chart: "תקציב פרויקטים / פרויקט / אירועים קרובים",
+      deals_pipeline: "צנרת פרויקטים / פרויקט / אירועים",
       latest_activity: "פעילות אחרונה",
       latest_activity_error: "שגיאה בטעינת פעילות אחרונה",
       latest_notes: "ההערות האחרונות שלי",
@@ -430,7 +430,7 @@ export const hebrewCrmMessages = {
         unable: "לא ניתן לייבא קובץ זה.",
       },
       idle: {
-        description_1: "ניתן לייבא צוות, מחלקות, חוקרים, הערות ומשימות.",
+        description_1: "ניתן לייבא צוות, מחלקות, אנשי קשר, הערות ומשימות.",
         description_2: "הנתונים חייבים להיות בקובץ JSON בפורמט הדוגמה הבאה:",
       },
       status: {
@@ -452,7 +452,7 @@ export const hebrewCrmMessages = {
       deals: {
         categories: "קטגוריות",
         currency: "מטבע",
-        pipeline_help: "בחר אילו שלבי אירוע ייחשבו כאירועים בצנרת.",
+        pipeline_help: "בחר אילו שלבי פרויקט / אירוע ייחשבו כפרויקטים.",
         pipeline_statuses: "סטטוסים בצנרת",
         stages: "שלבים",
       },
@@ -476,7 +476,7 @@ export const hebrewCrmMessages = {
       validation: {
         duplicate: "%{display_name} כפולים: %{items}",
         in_use:
-          "לא ניתן להסיר %{display_name} שעדיין בשימוש באירועים: %{items}",
+          "לא ניתן להסיר %{display_name} שעדיין בשימוש בפרויקטים / פרויקט / אירועים: %{items}",
         validating: "מאמת\u2026",
         entities: {
           categories: "קטגוריות",
@@ -497,7 +497,7 @@ export const hebrewCrmMessages = {
     profile: {
       inbound: {
         description:
-          "ניתן להתחיל לשלוח מיילים לכתובת הדואר הנכנס של השרת, למשל על ידי הוספתה לשדה %{field}. Prisma Negev CRM יעבד את המיילים ויוסיף הערות לחוקרים המתאימים.",
+          "ניתן להתחיל לשלוח מיילים לכתובת הדואר הנכנס של השרת, למשל על ידי הוספתה לשדה %{field}. Prisma Negev CRM יעבד את המיילים ויוסיף הערות לאנשי קשר המתאימים.",
         title: "דואר נכנס",
       },
       password: {

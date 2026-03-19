@@ -35,6 +35,22 @@ export const TaskFormContent = ({
           />
         </ReferenceInput>
       )}
+      
+      <ReferenceInput source="deal_id" reference="deals">
+        <AutocompleteInput
+          label="resources.tasks.fields.deal_id"
+          optionText="name"
+          helperText={false}
+          modal
+        />
+      </ReferenceInput>
+
+      <TextInput
+        source="note"
+        multiline
+        className="m-0"
+        helperText="resources.tasks.fields.note_helper"
+      />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <DateTimeInput

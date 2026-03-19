@@ -77,6 +77,13 @@ const Header = () => {
                     to="/deals"
                     isActive={currentPath === "/deals"}
                   />
+                  <NavigationTab
+                    label={translate("resources.tasks.name", {
+                      smart_count: 2,
+                    })}
+                    to="/tasks"
+                    isActive={currentPath === "/tasks"}
+                  />
                 </nav>
               </div>
               <div className="flex items-center">
